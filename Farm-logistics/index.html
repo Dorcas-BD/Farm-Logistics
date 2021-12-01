@@ -1,56 +1,446 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logistics</title>
-    <script
-      src="https://kit.fontawesome.com/1935d064dd.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="media-queries.css" />
-  </head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <!-- LOGO -->
-          <img class="logo" src="./images/mafin-logo.png" alt="" />
-          <!-- HAMBURGER ICON -->
-          <div class="hamburger">
-            <i class="fas fa-bars"></i>
-          </div>
-          <!-- NAVIGATION -->
-          <ul class="nav-ul">
-            <i class="fas fa-times close"></i>
-            <li><a href="" class="nav-link current">Home</a></li>
-            <li><a href="" class="nav-link">Services</a></li>
-            <li><a href="" class="nav-link">About</a></li>
-            <li><a href="" class="nav-link">Contact</a></li>
-            <li><a href="./SignIn/index.html" class="nav-link">Login</a></li>
-          </ul>
-          <!-- <i class="fas fa-search search"></i> -->
-        </nav>
-      </div>
-    </header>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-    <main>
-      <!-- Intro Section -->
-      <section id="intro">
-        <div class="container">
-          <div class="intro-text line">
-            <h1>Get your Farm Produce to the Right Destination</h1>
-            <a href="./SignUp/index.html" class="btn btn-dark">Getting Started</a>
-          </div>
-          <!-- CARDS -->
-        </div>
-    </main>
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-   
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="script.js"></script>
-  </body>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>RexoFarm</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="RexoFarm.jpg" alt="">
+                    <!-- <i class="ri-leaf-line nav__logo-icon"></i> Plantex -->
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./SignUp/index.html" class="nav__link button-log">Sign Up</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line">Close</i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <!-- <a href="#"><i class="ri-profile-line change-theme">Pro</i></a> -->
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line">Menu</i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="truck.jpg" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Good Transportation<br>Better Profit
+                        </h1>
+                        <p class="home__description">
+                            Get your Farm Produce to the Right Destination at the Right time.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Move Your Goods <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="truck1.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Who we really are & <br> why choose us
+                        </h2>
+
+                        <p class="about__description">
+                            We have different vehicle for different type of farm produced. 
+                            Our customers trust our services and fast delivery time.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always deliver on time.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                               Track your delivery at any time.
+                            </p>
+                            <!-- <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always come over for a check-up after sale.
+                            </p> -->
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% goods insurance guaranteed.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Move Goods <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps involve to <br> move your goods
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Request to move goods</h3>
+                            <p class="steps__card-description">
+                                Fill the request form and give necessary information.
+                            </p>
+                        </div>
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Make Payment</h3>
+                            <p class="steps__card-description">
+                                Once your request and payment is confirm, we move to the next step which is the shipping.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Get goods Delivered</h3>
+                            <p class="steps__card-description">
+                                Our delivery process is easy, you receive your goods at the indicated location.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    Our Services
+                </h2>
+
+                <p class="product__description">
+                    We provide different and suitable trucks for your goods
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">   
+                        <h3 class="product__title">Frozen Food</h3>
+                        <p class="product__card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus quis dolorum error expedita? Beatae, ea. Vel, sapiente! Corrupti, exercitationem!</p> 
+                    </article>
+                    <article class="product__card">   
+                        <h3 class="product__title">Frozen Food</h3>
+                        <p class="product__card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus quis dolorum error expedita? Beatae, ea. Vel, sapiente! Corrupti, exercitationem!</p> 
+                    </article>
+                    <article class="product__card">   
+                        <h3 class="product__title">Frozen Food</h3>
+                        <p class="product__card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus quis dolorum error expedita? Beatae, ea. Vel, sapiente! Corrupti, exercitationem!</p> 
+                    </article>
+                    <article class="product__card">   
+                        <h3 class="product__title">Frozen Food</h3>
+                        <p class="product__card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus quis dolorum error expedita? Beatae, ea. Vel, sapiente! Corrupti, exercitationem!</p> 
+                    </article>
+                    <article class="product__card">   
+                        <h3 class="product__title">Frozen Food</h3>
+                        <p class="product__card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus quis dolorum error expedita? Beatae, ea. Vel, sapiente! Corrupti, exercitationem!</p> 
+                    </article>
+                    <article class="product__card">   
+                        <h3 class="product__title">Frozen Food</h3>
+                        <p class="product__card-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus quis dolorum error expedita? Beatae, ea. Vel, sapiente! Corrupti, exercitationem!</p> 
+                    </article>
+
+                    
+                     
+                </div>
+            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Will I get my goods delivered in good conditions?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    We have teams that makes research on farm produce and that helps us 
+                                    to provide the best truck or vehicle to move your goods.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Will I be able to track my goods?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Yes. Our system is integrated with softwares that will allow you 
+                                    to track your good at any time and also communicate with the driver.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What happens in case of emergency such as vehicle breakdown or accident?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    All our vehicles and trucks get services before engaging in any delivery 
+                                    activites but if unfortunately there's a breakdown, we have backups.
+                                    Your goods are insured in case of accident so your goods are safe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Can I change my delivery location even after my goods are on its way?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Yes. We calculate our fee kilogram per kilometer so if your locationis 
+                                   changed the system will do the calcution for the updated service
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Can I change my delivery location even after my goods are on its way?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Yes. We calculate our fee kilogram per kilometer so if your locationis 
+                                   changed the system will do the calcution for the updated service
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Can I change my delivery location even after my goods are on its way?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Yes. We calculate our fee kilogram per kilometer so if your locationis 
+                                   changed the system will do the calcution for the updated service
+                                </p>
+                            </div>
+                        </div>
+ 
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +234 705 725 8425
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    rexofarm@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <img src="RexoFarm.jpg" alt="">
+                    </a>
+                </div>
+
+                <!-- <div class="footer__content">
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div> -->
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">OAU, Ile-Ife</li>
+                        <li class="footer__information">Osun State, Nigeria</li>
+                        <li class="footer__information">234 705 725 8425</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+234 705 725 8425</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Rexopakt Logistics. All rigths reserved</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="script.js"></script>
+    </body>
 </html>
