@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="requestForm.css">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title> 
+</head>
+
+<body>
+	<h1>Request form</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Types of Goods 
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role" >
+				<option value="student">Select types</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+	 
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Date for Pickup
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="date"
+				id="age"
+				placeholder="Pickup Date" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Quantity of goods(kg)
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Quantity" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Pickup Address
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Address" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Pickup closest Landmark
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Pickup Landmark" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Delivery Address
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Address" />
+		</div>
+		 
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Delivery closest Landmark
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Delivery Landmark" />
+		</div>
+ 
+
+		<div class="form-control">
+			<label>
+				Do you want your goods to be insured?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label> 
+		</div>
+
+		 
+
+		<div class="form-control">
+			<label for="comment">
+				Any addititional information?
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your text here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Proceed to payment
+		</button>
+	</form>
+</body>
+
+</html>
